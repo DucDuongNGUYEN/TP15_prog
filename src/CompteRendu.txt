@@ -1,0 +1,24 @@
+1.1) On doit modifier plusieurs méthodes dans la classe ReveilleMatin (initiale) par supprimer les appels de sieste et les attributs qui sont liés à sieste.
+
+1.2) On peut modifier la classe ReveilleMatin pour ajouter un attribut de type ChantOiseau.
+
+1.3) On doit modifier la méthode tictac() dans la classe ReveilleMatin.
+
+1.4) Si on décide d’ajouter, de modifier ou d’enlever un état, on doit modifier cette méthode (void basculeReveil()) par ajouter un nouvel état.
+
+1.5) - Le SRP est violé, car cette classe se serve à plusieurs responsabilités différentes (calculer er afficher l'heure,
+       régler les sons, etc)
+     - Le OCP est violé, car si on veut ajouter/modifier/enlever quelque chose (attribut, méthode ou fonctionnement, ...),
+       on doit entrer et modifier directement dans cette classe complète (donc il peut y avoir des bugs).
+     - Le DIP est violé, car la classe ReveilleMatin dépend à 2 classe Buzzer et Radio qui sont des modules de bas niveau.
+
+2.1) Les principes suivants sont bien respectés :
+    - SRP : chaque classe se serve à une responsabilité uniquement.
+    - OCP : lorsque le SRP était respecté, on sait que si on veut modifier quelque chose, on ne modifie que la classe/ interface
+    qui le gère.
+    - DIP : HorlogeReveille dépend à Reveille, Reveille dépend à Observateur.
+
+2.6) les principes suivants sont bien respectés :
+     - SRP : chaque classe se serve à une responsabilité uniquement.
+     - OCP : si on veut modifier quelque chose, on ne modifie que la classe/ interface qui le gère.
+     Le principe de DIP est violé
